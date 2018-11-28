@@ -6,11 +6,11 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 
 body {
-	height: 100%;
-	width: 100%;
 	background-color: #BBB;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 28px;
@@ -135,6 +135,9 @@ h1, h2, h3, h4, h5 {
 	position: fixed;
 	right: 30px;
 	bottom: 30px;
+	display: block;
+	-webkit-backface-visibility: hidden;
+	transform: translateZ(0); 
 }
 
 .dialog {
@@ -163,6 +166,7 @@ h1, h2, h3, h4, h5 {
 	border: none;
 	border-bottom: 1px solid #BBB;
 	margin-top: 20px;
+	width: 100%;
 }
 
 .dialog input[type="button"] {
