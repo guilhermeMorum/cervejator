@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta name="viewport" content="width=device-width, initial-scale=.7">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto+Condensed" rel="stylesheet">
+	<title>CERVEJATOR</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<!-- <div id="intro">
+		<div>
+			<h1>Cervejator</h1>
+			<input type="button" value="Começar">
+		</div>
+	</div> -->
+	<div id="header">
+		<h1>CERVEJATOR</h1>
+	</div>
+	<div id="controls">
+		<div class="icons">
+			<div class="icon control" desc="+ pessoa" onclick="addPessoa();">
+				<i class="fas fa-user"></i>
+			</div>
+			<div class="icon control" desc="+ comida" onclick="addComida();">
+				<i class="fas fa-utensils"></i>
+			</div>
+			<div class="icon control" desc="+ bebida" onclick="addDrink();">
+				<i class="fas fa-beer"></i>
+			</div>
+			<div class="icon control" desc="+ grupo" onclick="addGroup();">
+				<i class="fas fa-users"></i>
+			</div>
+		</div>
+	</div>
+	<div id="group">
+		<!-- <div class="icons">
+			<div class="icon" counter="1" desc="chope">
+				<i class="fas fa-beer"></i>
+			</div>
+			<div class="icon" counter="5" desc="batata">
+				<i class="fas fa-utensils"></i>
+			</div>
+			<div class="icon" counter="12" desc="sorvete">
+				<i class="fas fa-stroopwafel"></i>
+			</div>
+		</div> -->
+	</div>
+	<div id="content">
+		<div class="person">
+			<div class="name">Nenhum participante incluso! Adicione um participante!</div>
+		</div>
+		<!-- <div class="person">
+			<div class="name">Guilherme Morum Santos - <span>R$250,50</span></div>
+			<div class="icons">
+				<div class="icon" counter="2" desc="batata">
+					<i class="fas fa-utensils"></i>
+				</div>
+				<div class="icon" counter="9" desc="chope">
+					<i class="fas fa-beer"></i>
+				</div>
+				<div class="icon" counter="3" desc="refri">
+					<i class="fas fa-stroopwafel"></i>
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<div id="results">
+		<b>Total:</b> R$<span id="total"></span>
+	</div>
+	<div id="dialog-pessoa" class="dialog">
+		<div class="box">
+			<h3 id="dialog-pessoa-text">Insira texto aqui</h3>
+			<input id="dialog-pessoa-nome" type="text" placeholder="nome">
+			<div>
+				<input type="button" value="enviar" onclick="enviar();">
+				<input type="button" value="cancelar" onclick="fechaDialog();">
+			</div>
+		</div>
+	</div>
+	<div id="dialog-comida" class="dialog">
+		<div class="box">
+			<h3 id="dialog-comida-text">Insira texto aqui</h3>
+			<input id="dialog-comida-nome" type="text" placeholder="prato">
+			<input id="dialog-comida-preco" type="number" placeholder="R$">
+			<div>
+				<input type="button" value="enviar" onclick="enviar();">
+				<input type="button" value="cancelar" onclick="fechaDialog();">
+			</div>
+		</div>
+	</div>
+	<div id="dialog-grupo" class="dialog">
+		<div class="box">
+			<h3 id="dialog-grupo-text">Insira texto aqui</h3>
+			<select id="dialog-grupo-select" multiple>
+			</select>
+			<div>
+				<input type="button" value="enviar" onclick="enviar();">
+				<input type="button" value="cancelar" onclick="fechaDialog();">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
