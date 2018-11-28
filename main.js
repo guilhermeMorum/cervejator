@@ -63,6 +63,9 @@ function renderizaAll(){
 }
 
 function renderizaPessoas(){
+	if(pessoas.length == 0){
+		return;
+	}
 	content.innerHTML="";
 	for(var i = 0; i < pessoas.length; i++){
 		content.innerHTML+=`
